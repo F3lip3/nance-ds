@@ -12,6 +12,8 @@ module.exports = {
       '3xl': 32
     },
     colors: {
+      black: '#000',
+      white: '#fff',
       'chestnut-600': '#B7524E',
       'cyan-700': '#5098C9',
       'cyan-600': '#69AEDE',
