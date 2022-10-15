@@ -5,14 +5,28 @@ import { Text } from './Text';
 export default {
   title: 'Componets/Checkbox',
   component: Checkbox,
-  args: {},
+  args: {
+    id: 'checkbox'
+  },
+  argTypes: {
+    id: {
+      table: {
+        disable: true
+      }
+    },
+    asChild: {
+      table: {
+        disable: true
+      }
+    }
+  },
   decorators: [
     Story => {
       return (
-        <div className="flex items-center gap-2">
+        <label className="flex items-center gap-2" htmlFor="checkbox">
           {Story()}
-          <Text size="md">Keep conected for 30 days</Text>
-        </div>
+          <Text size="sm">Keep conected for 30 days</Text>
+        </label>
       );
     }
   ]
